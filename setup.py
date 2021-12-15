@@ -1,6 +1,6 @@
 from setuptools import setup, Extension
 
-bell_yespower_module = Extension('tide_yespower',
+tide_yespower_module = Extension('tide_yespower',
                             sources = ['yespower-module.c',
                                        'yespower.c',
                                        'yespower-opt.c',
@@ -15,4 +15,4 @@ setup (name = 'tide_yespower',
        author = 'liklo_adm',
        url = 'https://github.com/likloadm/tide_yespower_python3',
        description = 'Bindings for yespower-1.0 proof of work used by tidecoin',
-       ext_modules = [bell_yespower_module])
+       ext_modules = [tide_yespower_module])
