@@ -2,10 +2,9 @@ from setuptools import setup, Extension
 
 tide_yespower_module = Extension('tide_yespower',
                             sources = ['yespower.c',
-                                       'yespower-module.c',
-                                 
                                        'yespower-opt.c',
-                                       'sha256.c'
+                                       'sha256.c',
+                                       'yespower-module.c'
                                        ],
                             extra_compile_args=['-O2', '-funroll-loops', '-fomit-frame-pointer'],
                             include_dirs=['.'])
