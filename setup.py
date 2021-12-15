@@ -1,6 +1,6 @@
 from setuptools import setup, Extension
 
-bell_yespower_module = Extension('bell_yespower',
+bell_yespower_module = Extension('tide_yespower',
                             sources = ['yespower-module.c',
                                        'yespower.c',
                                        'yespower-opt.c',
@@ -9,10 +9,10 @@ bell_yespower_module = Extension('bell_yespower',
                             extra_compile_args=['-O2', '-funroll-loops', '-fomit-frame-pointer'],
                             include_dirs=['.'])
 
-setup (name = 'bell_yespower',
+setup (name = 'tide_yespower',
        version = '1.0.3',
-       author_email = 'yuto_tetuota@yahoo.co.jp',
-       author = 'y-chan',
-       url = 'https://github.com/bellcoin-electrum/bell_yespower_python3',
-       description = 'Bindings for yespower-1.0 proof of work used by bellcoin',
+       author_email = 'liklo.adm@gmail.com',
+       author = 'liklo_adm',
+       url = 'https://github.com/likloadm/tide_yespower_python3',
+       description = 'Bindings for yespower-1.0 proof of work used by tidecoin',
        ext_modules = [bell_yespower_module])
